@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Controller backups (personal data, never commit)
+backups/
+
+# Downloaded by setup.sh
+qanba/loaders/*.bin
+
+# Qanba firmware packages are copyrighted; users download them from Qanba
+*.zip
+*.exe
+*.fw
+
+.DS_Store

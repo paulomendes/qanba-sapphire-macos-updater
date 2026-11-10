@@ -1,0 +1,7 @@
+#!/bin/bash
+# Launcher: runs the updater with the private Python environment created by setup.sh.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if [ ! -x "$DIR/.venv/bin/python" ]; then
+  echo "Run ./setup.sh first." >&2; exit 1
+fi
+exec "$DIR/.venv/bin/python" "$DIR/qanba_updater.py" "$@"
